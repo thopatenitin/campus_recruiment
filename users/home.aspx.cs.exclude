@@ -1,0 +1,37 @@
+﻿using System;
+using System.Collections.Generic;
+
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+namespace CampusRecruiment.users
+{
+    public partial class home : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        { 
+           
+            string s = (string)Session["userid"];
+            if(s==null)
+            {
+                Response.Redirect("~/login.aspx");
+            }
+            SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=F:\Users\Prathamesh\Desktop\recruiment.mdf;Integrated Security=True;Connect Timeout=30;User Instance=True");
+              String sql = "select * from user_detail where USER_NAME = '" + s + "'";
+              SqlDataAdapter ad = new SqlDataAdapter(sql,con);
+              SqlCommandBuilder cmd = new SqlCommandBuilder();
+              DataSet ds = new DataSet();
+              ad.Fill(ds,"user_detail");
+
+            Label1.Text = ds.Tables["user_detail"].Rows[0][1].ToString();
+            
+        }
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session.Clear();
+            Response.Redirect("~/login.aspx");
+        }
+}
+}

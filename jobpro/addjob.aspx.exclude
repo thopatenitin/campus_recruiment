@@ -1,0 +1,240 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="addjob.aspx.cs" Inherits="CampusRecruiment.jobpro.addjob" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title><link href="../StyleSheet1.css"
+            rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 170px;
+        }
+        .style2
+        {
+            width: 883px;
+        }
+        .style3
+        {
+            width: 1072px;
+        }
+        .style4
+        {
+            width: 703px;
+        }
+        .style5
+        {
+            width: 901px;
+        }
+    </style>
+</head>
+<body background="../doghfhhgwnload%20(1).jpg" style="background-image: ../doghfhhgwnload (1).jpg; background-repeat: inherit; background-position: 15px 15px; background-attachment: scroll;">
+    <form id="form1" runat="server">
+    <div style="padding: 8%; margin: 9%; background-image: inherit; background-repeat: repeat; background-attachment: scroll;">
+<table  background="~/IMAGE021.JPG"  frame="box" border="2">
+    <tr>
+    <td class="style1" height="125" >
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/IMG-20140921-WA0002.jpg" Width="150px" />
+        </td>
+    <td align="center" colspan="3" class="style2" ><h1>Jack Sparro Recruiment<br />
+        </h1><h2>Solution For Carrier</h2>
+      
+        </td>
+    </tr></table><table style="right: 10px; left: 10px">
+    <tr>
+   
+    <td class="style3"><table border="2">
+    <tr>
+    <td width="150" valign="top">Profile<br />
+        <br />
+        Inbox<br />
+        <br />
+        Search Jobs<br />
+        <br />
+        Posting Jobs<br />
+        <br />
+        Feedback</td>
+        
+    <td class="style5"><table><tr>
+    <td valign="top" width="200">
+        <asp:Label ID="Label22" runat="server" Text="Job Type :"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label1" runat="server" Text="Job Profile :"></asp:Label>
+
+        <br />
+        <br />
+        <asp:Label ID="Label4" runat="server" Text="Required  Qualification :"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Other Qualification :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label11" runat="server" Text="Job Location :"></asp:Label>
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label2" runat="server" Text="Company Name :"></asp:Label>
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label23" runat="server" Text="City :"></asp:Label>
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label24" runat="server" Text="LandMark :"></asp:Label>
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label25" runat="server" Text="District :"></asp:Label>
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label26" runat="server" Text="State :"></asp:Label>
+        <br />
+        <br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label27" runat="server" Text="Pin Code :"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label28" runat="server" Text="Email Id :"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label29" runat="server" Text="Web Site :"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label8" runat="server" Text="Experiance :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label14" runat="server" Text="Experiance In Month :"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label15" runat="server" Text="Experiance Detail :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label13" runat="server" Text="Age :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label5" runat="server" Text="Sallery :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label6" runat="server" Text="Upload Company Logo :"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <br />
+        <br />
+ </td>
+    <td valign="top" class="style4">
+        <asp:TextBox ID="jobtype" runat="server" Width="175px" 
+            ></asp:TextBox>
+        <br />
+        <br />
+        <asp:DropDownList ID="jobprofile" runat="server">
+            <asp:ListItem>qw</asp:ListItem>
+        </asp:DropDownList>
+        
+        <br />
+        <br />
+        <asp:DropDownList ID="req_quali" runat="server">
+            <asp:ListItem>qw</asp:ListItem>
+        </asp:DropDownList>
+        
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <asp:TextBox ID="other_qua" runat="server" Rows="3" TextMode="MultiLine" ></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        &nbsp;<asp:TextBox 
+            ID="comp_name" runat="server" Width="250px" ></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+        <asp:TextBox ID="city" runat="server" ></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="landmark" runat="server" ></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="district" runat="server"  ></asp:TextBox>
+        <br />
+        <asp:DropDownList ID="state" runat="server">
+            <asp:ListItem>qw</asp:ListItem>
+        </asp:DropDownList>
+        
+        <br />
+        
+        <br />
+        <asp:TextBox ID="pin_code" runat="server" ></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="email_id" runat="server" Rows="4" Width="225px"></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="website" runat="server" Width="225px"></asp:TextBox>
+        <br />
+        <br />
+        <asp:RadioButtonList ID="experiance" runat="server" 
+            RepeatColumns="3" >
+            <asp:ListItem>Yes</asp:ListItem>
+            <asp:ListItem>No</asp:ListItem>
+            <asp:ListItem>Both</asp:ListItem>
+        </asp:RadioButtonList>
+        <br />
+        <asp:TextBox ID="exp_month" runat="server" Rows="5"></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="exp_detail0" runat="server" Rows="5" TextMode="MultiLine"></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="age" runat="server" Rows="5" BorderWidth="2px" Width="50px"></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        <asp:TextBox ID="sallery" runat="server" Rows="5"></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        <asp:FileUpload ID="photoupload" runat="server" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />&nbsp;<asp:Button ID="Button1" runat="server" Text="Proceed" onclick="Button1_Click1" 
+             />
+        <br />
+</td>
+        </tr>
+    </table></td></tr>
+    </table>
+</td></tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>

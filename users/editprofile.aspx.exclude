@@ -1,0 +1,160 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="editprofile.aspx.cs" Inherits="CampusRecruiment.users.editprofile" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title><link href="../StyleSheet1.css"
+            rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <table  background="~/IMAGE021.JPG"  frame="box">
+    <tr>
+    <td class="style1" height="125" >
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/IMG-20140921-WA0002.jpg" Width="150px" />
+        </td>
+    <td align="center" colspan="3" class="style3" width="1200"><h1>Jack Sparro Recruiment<br />
+        </h1><h2>Solution For Carrier</h2>
+      
+        </td>
+        <table border="2">
+    <tr>
+    <td width="150" valign="top">Profile<br />
+        <br />
+        Inbox<br />
+        <br />
+        Search Jobs<br />
+        <br />
+        Posting Jobs<br />
+        <br />
+        Feedback</td>
+        
+    <td>
+        <table>
+            <tr>
+                <td valign="top" width="20%">
+                    <asp:Label ID="Label1" runat="server" Text="Last Name : "></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    <br />
+                    <asp:Label ID="Label2" runat="server" Text="User Name : " 
+                        ToolTip="User Name : "></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    <br />
+                    <asp:Label ID="Label3" runat="server" Text="Password : "></asp:Label>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:Label ID="Label4" runat="server" Text="ReEnter Password : "></asp:Label>
+                    <br />
+                    <br />
+                    <asp:Label ID="Label11" runat="server" Text="Gender : "></asp:Label>
+                    <br />
+                    <br />
+                    <asp:Label ID="Label12" runat="server" Text="Date Of Birth : "></asp:Label>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <asp:Label ID="Label13" runat="server" Text="Address : "></asp:Label>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <asp:Label ID="Label5" runat="server" Text="EMail-ID : "></asp:Label>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:Label ID="Label6" runat="server" Text="Contact No : "></asp:Label>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br />
+                    <br />
+                    <asp:Label ID="Label7" runat="server" Text="Select Security Question : "></asp:Label>
+                    <br />
+                    <br />
+                    <asp:Label ID="Label8" runat="server" Text="Answer : "></asp:Label>
+                    <br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </td>
+                <td valign="top" width="30%">
+                    <asp:TextBox ID="TextBox1" runat="server" ></asp:TextBox>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:TextBox ID="TextBox2" runat="server" ></asp:TextBox>
+                    <br />
+                    <br />
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <br />
+                    <asp:RadioButtonList ID="RadioButtonList1" runat="server" RepeatColumns="7">
+                        <asp:ListItem>MALE</asp:ListItem>
+                        <asp:ListItem>FEMALE</asp:ListItem>
+                    </asp:RadioButtonList>
+                    <br />
+                    <asp:Calendar ID="Calendar1" runat="server" Height="100px" Width="60%">
+                    </asp:Calendar>
+                    <br />
+                    <asp:TextBox ID="TextBox11" runat="server" Rows="5" TextMode="MultiLine"></asp:TextBox>
+                    <br />
+                    <br />
+                    <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:DropDownList ID="DropDownList1" runat="server">
+                        <asp:ListItem>MY NAme</asp:ListItem>
+                        <asp:ListItem>dffgfgfgfgfgfgfgfgfgfg</asp:ListItem>
+                        <asp:ListItem>df</asp:ListItem>
+                        <asp:ListItem>sd</asp:ListItem>
+                    </asp:DropDownList>
+                    <br />
+                    <br />
+                    <br />
+                    <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                    <br />
+                    <br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="Button1" runat="server" BorderColor="Black" BorderWidth="3px" 
+                         Text="Proceed" />
+                </td>
+                <td valign="top" width="25%">
+                    <asp:Label ID="Label9" runat="server" Text="First Name : "></asp:Label>
+                    &nbsp;&nbsp;
+                    <asp:TextBox ID="TextBox9" runat="server" ></asp:TextBox>
+                </td>
+                <td valign="top" width="500">
+                    Middle&nbsp; Name :&nbsp;&nbsp; <asp:TextBox ID="TextBox10" runat="server" 
+                        style="width: 128px" Width="20px"></asp:TextBox>
+                </td>
+            </tr>
+        </table>
+        </td></tr>
+    </table>
+    </tr></table>
+    </div>
+    </form>
+</body>
+</html>

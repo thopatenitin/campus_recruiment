@@ -1,0 +1,17 @@
+﻿body {
+}
+h1
+{
+    font-family: Algerian;
+    font-size: 40px;
+    font-style: italic;
+    text-decoration: underline;
+    
+    color: #3399FF;
+}
+h2
+{
+    font-family: 'Times New Roman' , Times, serif;
+    font-size: 15px;
+    text-decoration: blink;
+}

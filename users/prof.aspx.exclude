@@ -1,0 +1,216 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="prof.aspx.cs" Inherits="CampusRecruiment.users.prof" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<body>
+    <form id="form1" runat="server">
+    <div>
+    <html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title><link href="../StyleSheet1.css"
+            rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form2" runat="server" enctype="multipart/form-data">
+    <div>
+<table  background="~/IMAGE021.JPG"  frame="box">
+    <tr>
+    <td class="style1" height="125" >
+        <asp:Image ID="Image1" runat="server" 
+            ImageUrl="~/IMG-20140921-WA0002.jpg" Width="150px" />
+        </td>
+    <td align="center" colspan="3" class="style3" width="850"><h1>Jack Sparro Recruiment<br />
+        </h1><h2>Solution For Carrier</h2>
+      
+        </td>
+    </tr></table><table border="2">
+    <tr>
+    <td width="150" valign="top">Profile<br />
+        <br />
+        Inbox<br />
+        <br />
+        Search Jobs<br />
+        <br />
+        Posting Jobs<br />
+        <br />
+        Feedback</td>
+        
+    <td><table><tr>
+    <td valign="top" width="150">
+        <asp:Label ID="Label1" runat="server" Text="Coures :"></asp:Label>
+
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label2" runat="server" Text="University :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label4" runat="server" Text="Qualification Detail :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label3" runat="server" Text="Other Qualification :"></asp:Label>
+        &nbsp;
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label11" runat="server" Text="Nationlity :"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label12" runat="server" Text="Date Of Birth : "></asp:Label>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label8" runat="server" Text="Experiance :"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label14" runat="server" Text="Experiance In Month :"></asp:Label>
+        <br />
+        <br />
+        <asp:Label ID="Label15" runat="server" Text="Experiance Detail :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label13" runat="server" Text="Hieght :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label5" runat="server" Text="Weight :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label6" runat="server" Text="Upload photograph :"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <br />
+        <br />
+        <br />
+        <asp:Label ID="Label7" runat="server" Text="Upload Resume :"></asp:Label>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+        <br />
+        <br />
+ </td>
+    <td valign="top" width="675">
+        <asp:TextBox ID="TextBox23" runat="server" 
+            ></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        <asp:DropDownList ID="DropDownList3" runat="server">
+        </asp:DropDownList>
+        <br />
+        <br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label16" runat="server" Text="University :"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label17" runat="server" Text="Date Of Passing"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label18" runat="server" Text="Persentage"></asp:Label>
+        <br />
+        <asp:Label ID="Label19" runat="server" Text="SSC :"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox14" runat="server" ></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox15" runat="server" ></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox16" runat="server" ></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label20" runat="server" Text="HSC :"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox17" runat="server" ></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox18" runat="server" ></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox19" runat="server" ></asp:TextBox>
+        <br />
+        <br />
+        <asp:Label ID="Label21" runat="server" Text="Degree :"></asp:Label>
+        &nbsp;&nbsp;
+        <asp:TextBox ID="TextBox20" runat="server" ></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox21" runat="server" ></asp:TextBox>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:TextBox ID="TextBox22" runat="server" ></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:TextBox ID="TextBox3" runat="server" ></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <asp:Calendar ID="Calendar1" runat="server" Height="100px" 
+            ></asp:Calendar>
+        <br />
+        <asp:RadioButtonList ID="RadioButtonList1" runat="server" AutoPostBack="True" 
+            RepeatColumns="2">
+            <asp:ListItem>Yes</asp:ListItem>
+            <asp:ListItem>No</asp:ListItem>
+        </asp:RadioButtonList>
+        <br />
+        <asp:TextBox ID="TextBox13" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="TextBox11" runat="server" Rows="5" TextMode="MultiLine"></asp:TextBox>
+        <br />
+        <br />
+        <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        <asp:TextBox ID="TextBox6" runat="server" ></asp:TextBox>
+        <br />
+        <br />
+        <br />
+        <asp:FileUpload ID="FileUpload1" runat="server" />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <asp:FileUpload ID="FileUpload2" runat="server" />
+        <br />
+        <br />
+        <br />&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;</td>
+        </tr>
+    </table></td></tr>
+    </table>
+    </div>
+    </form>
+</body>
+</html>
+
+    </div>
+    </form>
+</body>
+</html>

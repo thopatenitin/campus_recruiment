@@ -1,0 +1,77 @@
+﻿using System;
+using System.Collections.Generic;
+
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data;
+using System.Data.SqlClient;
+
+public partial class jobpro_conf_intervee : System.Web.UI.Page
+{
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        
+        String ID1 = "nit";
+        SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\recruiment.mdf;Integrated Security=True;User Instance=True");
+        String sql = "select USER_ID from jobapllied where FIRST='" + ID1 + "'";
+        SqlDataAdapter ad = new SqlDataAdapter(sql, con);
+
+        SqlCommandBuilder cmd = new SqlCommandBuilder(ad);
+        DataSet ds = new DataSet();
+        ad.Fill(ds, "jobapllied");
+       String user=ds.Tables["jobapllied"].Rows[0][0].ToString();
+       SqlConnection con1 = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\recruiment.mdf;Integrated Security=True;User Instance=True");
+       String sql3 = "select * from user_prof where ID='" + user + "'";
+       SqlDataAdapter ad2 = new SqlDataAdapter(sql3, con);
+
+       SqlCommandBuilder cmd2 = new SqlCommandBuilder(ad);
+       DataSet ds2 = new DataSet();
+       ad2.Fill(ds2, "user_prof");
+  
+     
+        String sql1 = "select * from user_detail where ID= '"+user+"'";
+        SqlDataAdapter asd = new SqlDataAdapter(sql1,con);
+        SqlCommandBuilder cmd1 = new SqlCommandBuilder(asd);
+        DataSet ds1 = new DataSet();
+        asd.Fill(ds1,"user_detail");
+        try
+        {
+            Image2.ImageUrl = ds2.Tables["user_prof"].Rows[0][20].ToString();
+            HyperLink1.NavigateUrl=ds2.Tables["user_prof"].Rows[0][21].ToString();
+            Label2.Text = "Name : " + ds1.Tables["user_detail"].Rows[0][1].ToString() + "  " + ds1.Tables["user_detail"].Rows[0][2].ToString() + "  " + ds1.Tables["user_detail"].Rows[0][3].ToString() + "  Address : " + ds1.Tables["user_detail"].Rows[0][5].ToString() + "  Gender : " + ds1.Tables["user_detail"].Rows[0][6].ToString() + "  Date Of Birth : " + ds1.Tables["user_detail"].Rows[0][7].ToString() + "  Contact No : " + ds1.Tables["user_detail"].Rows[0][8].ToString() + "  Email Id : " + ds1.Tables["user_detail"].Rows[0][9].ToString();
+            HyperLink2.NavigateUrl = ds2.Tables["user_prof"].Rows[0][21].ToString();
+            Label5.Text = "Name : " + ds1.Tables["user_detail"].Rows[1][1].ToString() + "  " + ds1.Tables["user_detail"].Rows[1][2].ToString() + "  " + ds1.Tables["user_detail"].Rows[1][3].ToString() + "  Address : " + ds1.Tables["user_detail"].Rows[1][5].ToString() + "  Gender : " + ds1.Tables["user_detail"].Rows[1][6].ToString() + "  Date Of Birth : " + ds1.Tables["user_detail"].Rows[1][7].ToString() + "  Contact No : " + ds1.Tables["user_detail"].Rows[1][8].ToString() + "  Email Id : " + ds1.Tables["user_detail"].Rows[1][9].ToString();
+            Label8.Text = "Name : " + ds1.Tables["user_detail"].Rows[2][1].ToString() + "  " + ds1.Tables["user_detail"].Rows[2][2].ToString() + "  " + ds1.Tables["user_detail"].Rows[2][3].ToString() + "  Address : " + ds1.Tables["user_detail"].Rows[2][5].ToString() + "  Gender : " + ds1.Tables["user_detail"].Rows[2][6].ToString() + "  Date Of Birth : " + ds1.Tables["user_detail"].Rows[2][7].ToString() + "  Contact No : " + ds1.Tables["user_detail"].Rows[2][8].ToString() + "  Email Id : " + ds1.Tables["user_detail"].Rows[2][9].ToString();
+            Label11.Text = "Name : " + ds1.Tables["user_detail"].Rows[3][1].ToString() + "  " + ds1.Tables["user_detail"].Rows[3][2].ToString() + "  " + ds1.Tables["user_detail"].Rows[3][3].ToString() + "  Address : " + ds1.Tables["user_detail"].Rows[3][5].ToString() + "  Gender : " + ds1.Tables["user_detail"].Rows[3][6].ToString() + "  Date Of Birth : " + ds1.Tables["user_detail"].Rows[3][7].ToString() + "  Contact No : " + ds1.Tables["user_detail"].Rows[3][8].ToString() + "  Email Id : " + ds1.Tables["user_detail"].Rows[3][9].ToString();
+            Label14.Text = "Name : " + ds1.Tables["user_detail"].Rows[4][1].ToString() + "  " + ds1.Tables["user_detail"].Rows[4][2].ToString() + "  " + ds1.Tables["user_detail"].Rows[4][3].ToString() + "  Address : " + ds1.Tables["user_detail"].Rows[4][5].ToString() + "  Gender : " + ds1.Tables["user_detail"].Rows[4][6].ToString() + "  Date Of Birth : " + ds1.Tables["user_detail"].Rows[4][7].ToString() + "  Contact No : " + ds1.Tables["user_detail"].Rows[4][8].ToString() + "  Email Id : " + ds1.Tables["user_detail"].Rows[4][9].ToString();
+           
+        }
+        catch (Exception w)
+        { }
+    }
+    protected void Button1_Click1(object sender, EventArgs e)
+    {
+
+
+        String ID1 = "nit";
+        SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\recruiment.mdf;Integrated Security=True;User Instance=True");
+        String sql = "select USER_ID from jobapllied where FIRST ='" + ID1 + "' or SECOND ='" + ID1 + "' or THIRD='" + ID1 + "'";
+        SqlDataAdapter ad = new SqlDataAdapter(sql, con);
+
+        SqlCommandBuilder cmd = new SqlCommandBuilder(ad);
+        DataSet ds = new DataSet();
+        ad.Fill(ds, "jobapllied");
+        int qw = ds.Tables["jobapllied"].Rows.Count;
+         string user_id = ds.Tables["jobapllied"].Rows[0][0].ToString();
+        if (qw > 0)
+        {
+            Label2.Text = ds.Tables["jobapllied"].Rows[0][0].ToString();
+        }
+        String sql1 = "insert into CONF (CONF_ID,C_ID,USER_ID,JOB_ID) values ('"+user_id+"','"+ID1+"','"+user_id+"','"+ID1+"')";
+        SqlDataAdapter ad1 = new SqlDataAdapter(sql1,con);
+        SqlCommandBuilder cmd1 = new SqlCommandBuilder(ad1);
+        DataSet ds1 = new DataSet();
+        ad1.Fill(ds1,"CONF");
+    }
+}

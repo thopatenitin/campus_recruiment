@@ -1,0 +1,73 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Data;
+namespace CampusRecruiment.users
+{
+    public partial class signup : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            String id=TextBox2.Text+TextBox6.Text;
+            SqlConnection con = new SqlConnection(@"Data Source=.\SQLEXPRESS;AttachDbFilename=|DataDirectory|\recruiment.mdf;Integrated Security=True;User Instance=True");
+            String sql = "insert into user_detail(ID,NAME,MIDDLE_NAME,LAST_NAME,PASSWORD,ADDRESS,GENDER,DOB,CONTACT_NO,EMAIL_ID,SECURITY_Q,SECURITY_A,USER_NAME)values ('"+id+"','"+TextBox9.Text+"','"+TextBox10.Text+"','"+TextBox9.Text+"','"+TextBox3.Text+"','"+TextBox11.Text+"','"+RadioButtonList1.SelectedValue.ToString()+"','"+Calendar1.SelectedDate.ToString()+"','"+TextBox6.Text+"','"+TextBox5.Text+"','"+DropDownList1.SelectedValue.ToString()+"','"+TextBox8.Text+"','"+TextBox2.Text+"')";
+            SqlDataAdapter ad = new SqlDataAdapter(sql,con);
+            SqlCommandBuilder cmd = new SqlCommandBuilder(ad);
+            DataSet ds = new DataSet();
+            ad.Fill(ds, "user_detail");
+            Label14.Text = TextBox2.Text;
+            Session["username"] = TextBox2.Text;
+            // Response.Redirect("home.aspx");
+        }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+        
+        }
+
+        protected void TextBox6_TextChanged(object sender, EventArgs e)
+        {
+        
+        }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

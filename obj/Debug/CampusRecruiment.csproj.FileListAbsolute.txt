@@ -1,0 +1,5 @@
+D:\nitin\CampusRecruiment\CampusRecruiment\bin\CampusRecruiment.dll
+D:\nitin\CampusRecruiment\CampusRecruiment\bin\CampusRecruiment.pdb
+D:\nitin\CampusRecruiment\CampusRecruiment\obj\Debug\CampusRecruiment.dll
+D:\nitin\CampusRecruiment\CampusRecruiment\obj\Debug\CampusRecruiment.pdb
+D:\nitin\CampusRecruiment\CampusRecruiment\obj\Debug\ResolveAssemblyReference.cache
